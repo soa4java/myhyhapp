@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/rl_bg_click"
+    android:background="#50000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_post_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1.0" >
+
+                <EditText
+                    android:id="@+id/et_post_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:drawableRight="@drawable/baise"
+                    android:hint="评论..."
+                    android:textColor="#323232"
+                    android:focusable="true"
+					android:focusableInTouchMode="true"
+                    android:textSize="@dimen/size12" />
+
+                <ImageButton
+                    android:id="@+id/ib_post_smile"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/et_post_msg"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dhck_smile_select" />
+            </RelativeLayout>
+            <ImageButton
+                android:id="@+id/ib_post_send"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:src="@drawable/dhck_send_select" />
+        </LinearLayout>
+        <!-- 底部操作表情功能  -->
+	    <LinearLayout android:id="@+id/rl_emoji_action_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="202dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/chat_bottom_solid"
+	        android:visibility="gone"
+	        >
+	        <android.support.v4.view.ViewPager
+		          android:id="@+id/vp_emoji"
+		          android:layout_width="fill_parent"
+		          android:layout_height="fill_parent"
+		          android:layout_weight="1.0"
+		          android:layout_gravity="center"/>
+	        <LinearLayout android:id="@+id/ll_select_origin"
+	            android:layout_width="fill_parent"
+	            android:layout_height="20dp"
+	            android:orientation="horizontal"
+	            android:gravity="center_vertical|center_horizontal">
+	        </LinearLayout> 
+	    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

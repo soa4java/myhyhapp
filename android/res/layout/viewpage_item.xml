@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.gezitech.widget.MyListView 
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@null"
+     	android:scrollingCache="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+		android:footerDividersEnabled="false"
+		android:headerDividersEnabled="false"> 
+    </com.gezitech.widget.MyListView>
+    <LinearLayout android:id="@+id/loading_bg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"  
+        android:background="@drawable/shake"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone"
+        >
+	    <ProgressBar  
+	        android:id="@+id/pb_load_progress"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:gravity="center"  
+	        android:indeterminate="false"
+	        android:indeterminateDrawable="@anim/progress_round">  
+	    </ProgressBar>
+	    <TextView android:textColor="#ffffff" 
+	        android:id="@+id/tv_hint"
+	        android:layout_gravity="center"
+	        android:paddingBottom="12.0dip" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginLeft="5.0dip" 
+	        android:layout_marginTop="5.0dip" 
+	        android:layout_marginRight="5.0dip" 
+	        android:text="@string/loading_hint"
+	        android:visibility="gone"
+	        />
+    </LinearLayout>
+</RelativeLayout>

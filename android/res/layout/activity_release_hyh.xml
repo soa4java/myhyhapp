@@ -1,0 +1,529 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:id="@+id/tv_12_height"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:layout_below="@+id/i_head"
+        android:background="@color/colorf8f8f8" />
+
+    <ScrollView
+        android:id="@+id/releaseHyh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv_12_height" >
+
+        <LinearLayout
+            android:id="@+id/releaseHyh_TOP"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+			<!-- <RadioGroup 
+			    android:id="@+id/rg_pubway_box"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal">
+			    <RadioButton android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1.0"
+			        android:button="@null"
+			        android:drawableLeft="@drawable/radio_button_background"
+			        android:background="@android:color/transparent"
+			        android:text="按距离发送"
+			        android:drawablePadding="5dp"
+			        android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" 
+			        android:checked="true"
+			        android:id="@+id/rb_juli"
+			        />
+			    <RadioButton android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1.0"
+			        android:button="@null"
+			        android:drawableLeft="@drawable/radio_button_background"
+			        android:background="@android:color/transparent"
+			        android:text="按地区发送"
+			        android:drawablePadding="5dp"
+			        android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" 
+			         android:id="@+id/rb_diqu"
+			        />
+			</RadioGroup> -->
+            <RelativeLayout
+                android:id="@+id/releaseHyh_shangjialexing"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_shangjialexing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shangjia_type"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_shangjialexing_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="@string/qingxuanze"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_releaseHyh_shangjialexing"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+			<!-- 范围选择 -->
+			<LinearLayout android:id="@+id/ll_juli_box"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:visibility="visible">
+            <RelativeLayout
+                android:id="@+id/releaseHyh_fabufanwei"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_fabufanwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/release_range"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_fabufanwei_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="@string/qingxuanze"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_releaseHyh_fabufanwei"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+            </LinearLayout>
+            <!-- 地区选择 -->
+            <LinearLayout android:id="@+id/ll_diqu_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+         <!--    <RelativeLayout
+                android:id="@+id/rl_guojia"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+                <TextView
+                    android:id="@+id/ed_guojia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select_border"
+                    android:paddingLeft="45dp"
+                    android:hint="未选择"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tv_guojia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="国家"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_dropdownlist_icon"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout> -->
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+	                android:id="@+id/shengshi"
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp"
+	                android:background="@color/white"
+	                android:clickable="true"
+	                android:layout_weight="1.0"
+	                android:paddingLeft="18dp"
+	                android:paddingRight="18dp" >
+	                <TextView
+	                    android:id="@+id/ed_shengshi"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_gravity="center_vertical"
+	                    android:background="@drawable/view_select_border"
+	                    android:paddingLeft="45dp"
+	                    android:hint="未选择"
+	                    android:textColor="@color/color949494"
+	                    android:textSize="@dimen/size14"
+	                    android:gravity="center_vertical"/>
+	                <TextView
+	                    android:id="@+id/tv_shengshi"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_marginLeft="6dp"
+	                    android:text="省市"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size14" />
+	                <ImageView android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/common_dropdownlist_icon"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_alignParentRight="true"/>
+	            </RelativeLayout>
+                <RelativeLayout
+	                android:id="@+id/shiqu"
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp"
+	                android:background="@color/white"
+	                android:clickable="true"
+	                android:layout_weight="1.0"
+	                android:paddingLeft="18dp"
+	                android:paddingRight="18dp" >
+	
+	               <TextView
+	                    android:id="@+id/ed_shiqu"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_gravity="center_vertical"
+	                    android:background="@drawable/view_select_border"
+	                    android:paddingLeft="45dp"
+	                    android:hint="未选择"
+	                    android:textColor="@color/color949494"
+	                    android:textSize="@dimen/size14"
+	                    android:gravity="center_vertical"/>
+	                <TextView
+	                    android:id="@+id/tv_shiqu"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_marginLeft="6dp"
+	                    android:text="市区"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size14" />
+	                <ImageView android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/common_dropdownlist_icon"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_alignParentRight="true"/>
+	            </RelativeLayout>
+            </LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+	                android:id="@+id/quxian"
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp"
+	                android:background="@color/white"
+	                android:clickable="true"
+	                android:layout_weight="1.0"
+	                android:paddingLeft="18dp"
+	                android:paddingRight="18dp" >
+	
+	               <TextView
+	                    android:id="@+id/ed_quxian"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_gravity="center_vertical"
+	                    android:background="@drawable/view_select_border"
+	                    android:paddingLeft="45dp"
+	                    android:hint="未选择"
+	                    android:textColor="@color/color949494"
+	                    android:textSize="@dimen/size14"
+	                    android:gravity="center_vertical"/>
+	                <TextView
+	                    android:id="@+id/tv_quxian"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_marginLeft="6dp"
+	                    android:text="区县"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size14" />
+	                <ImageView android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/common_dropdownlist_icon"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_alignParentRight="true"/>
+	            </RelativeLayout>
+                <RelativeLayout
+	                android:id="@+id/jiedao"
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp"
+	                android:background="@color/white"
+	                android:clickable="true"
+	                android:layout_weight="1.0"
+	                android:paddingLeft="18dp"
+	                android:paddingRight="18dp" >
+	
+	                <TextView
+	                    android:id="@+id/ed_jiedao"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_gravity="center_vertical"
+	                    android:background="@drawable/view_select_border"
+	                    android:paddingLeft="45dp"
+	                    android:hint="未选择"
+	                    android:textColor="@color/color949494"
+	                    android:textSize="@dimen/size14"
+	                    android:gravity="center_vertical"/>
+	                <TextView
+	                    android:id="@+id/tv_jiedao"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_marginLeft="6dp"
+	                    android:text="街道"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size14" />
+	                <ImageView android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/common_dropdownlist_icon"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_alignParentRight="true"/>
+	            </RelativeLayout>
+            </LinearLayout> 
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/releaseHyh_huifurenshu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_huifurenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/reply_number"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_releaseHyh_huifurenshu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:hint="至少1人"
+                    android:inputType="number"
+                    android:paddingLeft="96dp"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/releaseHyh_youxiaoshijian"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_youxiaoshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/youxiaoshijian"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_releaseHyh_youxiaoshijian_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="@string/qingxuanze"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_releaseHyh_youxiaoshijian"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@color/colorf8f8f8" />
+
+            <LinearLayout
+                android:id="@+id/releaseHyh_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="54dp"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/ed_releaseHyh_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@drawable/view_select"
+                        android:hint="@string/tianjiawenzi"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/selector_textcolor"
+                        android:textSize="@dimen/size12"
+                        android:singleLine="true"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/releaseHyh_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorf8f8f8"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="12dp" >
+
+                    <ImageButton
+                        android:id="@+id/iv_releaseHyh_camera"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/button_bjzd_camera" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_releaseHyh_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="12dp"
+                        android:visibility="gone" >
+
+                        <com.gezitech.widget.RemoteImageView
+                            android:id="@+id/iv_releaseHyh_photo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_del"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/play_del_xx" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorf8f8f8"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp" >
+
+                    <TextView
+                        android:id="@+id/releaseHyh_fbhyh_speak"
+                        android:layout_width="108dp"
+                        android:layout_height="108dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:background="@drawable/button_fbhyh_speak"
+                        android:clickable="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/i_voice"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/releasehyh_yuyin_dialog"
+        android:visibility="gone" />
+
+</RelativeLayout>

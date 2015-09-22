@@ -1,0 +1,378 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShangjiabBillActivity_bak" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/shangjiabBill_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/shangjiabBill_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_number"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/zhangdanbianhao"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="2014897654"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_merchantsname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_merchantsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shangjiaxingming"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillmerchantsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="风旗网络"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_merchantsaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_merchantsaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dizhi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillmerchantsaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="重庆市沙坪坝小龙坎正街49号"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_merchantscontact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_merchantscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lianxifangshi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillmerchantscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="023-65341571"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_buyersname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_buyersname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/maijiaxingming"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillbuyersname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="林小豆"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_buyersaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_buyersaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dizhi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillbuyersaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="重庆市沙坪坝区正升自由康都B座"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_buyerscontact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_buyerscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lianxifangshi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBillbuyerscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="13812345678"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorececec" />
+
+            <TextView
+                android:id="@+id/tv_shangjiabBill_beizhu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="此处为账单备注"
+                android:textColor="@color/color2c90f6"
+                android:textSize="@dimen/size14" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_jine"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/zhangdanjine"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBilljine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="80dp"
+                    android:text="25"
+                    android:textColor="@color/color2c90f6"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/shangjiabBill_t"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBill_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/remaining_time"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shangjiabBilltime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="80dp"
+                    android:text="01:15:00"
+                    android:textColor="@color/colorff340c"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/shangjiabBill_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorf8f8f8"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/testphoto_05" />
+
+                <LinearLayout
+                    android:id="@+id/shangjiabBill_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="27dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp" >
+
+                    <Button
+                        android:id="@+id/shangjiabBill_btnjujue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button_common_btn_red"
+                        android:text="@string/jujuezhifu"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size18" />
+
+                    <Button
+                        android:id="@+id/shangjiabBill_btnqueren"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button_common_btn_blue"
+                        android:text="@string/querenzhifu"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size18" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        android:id="@+id/zhuye_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/zhuye_group" />
+
+    <RadioGroup
+        android:id="@+id/zhuye_group"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/common_menu_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_menu"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/common_home"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="click"
+            android:text="@string/homepage"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size14" />
+
+        <RadioButton
+            android:id="@+id/session"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_menu"
+            android:button="@null"
+            android:drawableTop="@drawable/common_chat"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="click"
+            android:text="@string/session"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size14" />
+
+        <RadioButton
+            android:id="@+id/nearby"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_menu"
+            android:button="@null"
+            android:drawableTop="@drawable/common_nearby"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="click"
+            android:text="@string/nearby"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size14" />
+
+        <RadioButton
+            android:id="@+id/person"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_menu"
+            android:button="@null"
+            android:drawableTop="@drawable/common_person"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="click"
+            android:text="@string/person"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size14" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_unreadcount"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:gravity="top|right"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_unreadcount"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/hh_number_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0"
+                 android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_nearbycount"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+             android:gravity="top|right" 
+             android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_nearbycount"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/hh_number_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=""
+                 android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size10" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_like_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+             android:gravity="top|right"
+             android:visibility="invisible"  >
+
+            <TextView
+                android:id="@+id/tv_like_comment_count"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/hh_number_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size10" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

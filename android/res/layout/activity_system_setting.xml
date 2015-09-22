@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".SystemSettingActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+
+    <ScrollView
+        android:id="@+id/systemsetting_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/systemsetting_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorf8f8f8"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/systemsetting_xiugaimima"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_systemsetting_xiugaimima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/xiugaimima"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_systemsetting_xiugaimima"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/systemsetting_xinxiaoxitixing"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_systemsetting_xinxiaoxitixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/xinxiaoxitixing"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_systemsetting_xinxiaoxitixing"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/systemsetting_banbengengxin"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_systemsetting_banbengengxin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/banbengengxin"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_systemsetting_banbengengxin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/systemsetting_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_systemsetting_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/yijianfankui"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_systemsetting_feedback"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/systemsetting_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_systemsetting_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/lianxiwomen"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_systemsetting_contact"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/systemsetting_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_systemsetting_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/tuichudangqianzhanghao"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_systemsetting_exit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

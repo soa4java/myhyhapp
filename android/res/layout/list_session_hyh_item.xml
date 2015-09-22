@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+    <LinearLayout
+        android:id="@+id/myrelease_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d9efff"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/myrelease"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/myrelease_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_receive_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="于10:25收到"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_diff_time_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余时间："
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_diff_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:12:12"
+                    android:textColor="@color/colorff340c"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#c1e1fa"
+                android:id="@+id/v_line1" />
+
+            <RelativeLayout
+                android:id="@+id/myrelease_yuyin"
+                android:layout_width="fill_parent"
+                android:layout_height="61dp"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+                <RelativeLayout
+                    android:id="@+id/rl_yuyin_bg"
+                    android:layout_width="85dp"
+                    android:layout_height="43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    
+                    android:background="@drawable/right_button_dhckdialogbox_biue"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_voice_sign"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_dhck_voice_blue_03" />
+                </RelativeLayout>
+				<TextView
+                    android:id="@+id/myrelease_NUMBER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/rl_yuyin_bg"
+                    android:text="2&apos;&apos;"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+                <com.gezitech.widget.RemoteImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/common_default_photo"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#c1e1fa"
+                android:id="@+id/v_line2"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp" >
+
+            <TextView
+                android:id="@+id/tv_beizhu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:text="订单备注"
+                android:textColor="@color/color2c90f6"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:id="@+id/tv_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="2人回复"
+                android:textColor="@color/color949494"
+                android:textSize="@dimen/size14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorececec" />
+    <!-- 回复人的聊天列表 -->
+
+    <LinearLayout
+        android:id="@+id/ll_chat_person"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</LinearLayout>

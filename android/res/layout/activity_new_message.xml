@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".NewMessageActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+
+    <ScrollView
+        android:id="@+id/newmessage_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/newmessage_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorf8f8f8"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/receive_notifications"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_receive_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/jieshouxinxiaoxitongzhi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/Check_receive_notifications"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/btn_common_on"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/voice"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/shengyin"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/Check_voice"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/btn_common_on"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/vibration"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_vibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/zhendong"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/Check_vibration"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/btn_common_on"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/disturb"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_disturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/shezhimiandaraoshiduan"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/Check_disturb"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/btn_common_on"
+                    android:button="@null" />
+            </RelativeLayout>
+			<LinearLayout android:id="@+id/ll_time_box"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/start_time"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/kaishishijian"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/text_start_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:text="22:00"
+                    android:gravity="right"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/jieshushijian"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/text_end_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:text="8:00"
+                     android:gravity="right"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

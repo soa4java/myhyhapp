@@ -1,0 +1,361 @@
+# view res/layout/activity_chat.xml #generated:203
+# view res/layout/dialog_comment_box_dialog.xml #generated:73
+# view res/layout/framgent_session.xml #generated:105
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/notification_custom_builder.xml #generated:48
+-keep class android.widget.DateTimeView { <init>(...); }
+
+# view AndroidManifest.xml #generated:606
+-keep class cn.sharesdk.framework.ShareSDKUIShell { <init>(...); }
+
+# view AndroidManifest.xml #generated:679
+-keep class cn.sharesdk.sina.weibo.SinaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:594
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/activity_map.xml #generated:14
+# view res/layout/activity_mymap.xml #generated:13
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.gezitech.basic.GezitechApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:759
+-keep class com.gezitech.image.ImageDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:451
+-keep class com.gezitech.photo.PhotoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:446
+-keep class com.gezitech.photo.PhotoAlbumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:783
+-keep class com.gezitech.service.GetuiPushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:700
+-keep class com.gezitech.service.GezitechReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:691
+-keep class com.gezitech.service.xmpp.IMChatService { <init>(...); }
+
+# view res/layout/activity_forget.xml #generated:21
+# view res/layout/activity_registered.xml #generated:17
+# view res/layout/framgent_home.xml #generated:36
+-keep class com.gezitech.widget.ExtendViewFlipper { <init>(...); }
+
+# view res/layout/activity_post_msg.xml #generated:86
+# view res/layout/list_nearby.xml #generated:137
+# view res/layout/list_nearby.xml #generated:76
+-keep class com.gezitech.widget.FlowLayout { <init>(...); }
+
+# view res/layout/activity_new_friend.xml #generated:84
+# view res/layout/option_dialog.xml #generated:29
+-keep class com.gezitech.widget.ListViewNoScroll { <init>(...); }
+
+# view res/layout/list_image_add.xml #generated:20
+-keep class com.gezitech.widget.LoadingCircleView { <init>(...); }
+
+# view res/layout/activity_album.xml #generated:13
+# view res/layout/activity_chat.xml #generated:17
+# view res/layout/activity_contacts_add_buddy_phone.xml #generated:14
+# view res/layout/activity_income.xml #generated:192
+# view res/layout/activity_my_post_msg.xml #generated:45
+# view res/layout/activity_my_release.xml #generated:14
+# view res/layout/activity_new_msg_hint.xml #generated:17
+# view res/layout/activity_order.xml #generated:13
+# view res/layout/activity_search_chat_content.xml #generated:48
+# view res/layout/activity_search_friend.xml #generated:13
+# view res/layout/activity_select_template.xml #generated:15
+# view res/layout/activity_system_message.xml #generated:13
+# view res/layout/framgent_nearby.xml #generated:34
+# view res/layout/viewpage_item.xml #generated:5
+-keep class com.gezitech.widget.MyListView { <init>(...); }
+
+# view res/layout/activity_add_template.xml #generated:128
+# view res/layout/activity_become_service.xml #generated:405
+# view res/layout/activity_become_service.xml #generated:448
+# view res/layout/activity_become_service.xml #generated:534
+# view res/layout/activity_become_shangjia.xml #generated:405
+# view res/layout/activity_become_shangjia.xml #generated:448
+# view res/layout/activity_become_shangjia.xml #generated:534
+# view res/layout/activity_bill_detail_bak.xml #generated:340
+# view res/layout/activity_edit_data.xml #generated:51
+# view res/layout/activity_editbill.xml #generated:352
+# view res/layout/activity_look_service.xml #generated:372
+# view res/layout/activity_look_service.xml #generated:407
+# view res/layout/activity_look_service.xml #generated:478
+# view res/layout/activity_look_shangjia.xml #generated:372
+# view res/layout/activity_look_shangjia.xml #generated:407
+# view res/layout/activity_look_shangjia.xml #generated:478
+# view res/layout/activity_order_detail.xml #generated:310
+# view res/layout/activity_person_detailed_information.xml #generated:34
+# view res/layout/activity_release_hyh.xml #generated:482
+# view res/layout/framgent_person.xml #generated:37
+# view res/layout/item_adv.xml #generated:12
+# view res/layout/list_add_request.xml #generated:15
+# view res/layout/list_contacts_item.xml #generated:32
+# view res/layout/list_my_release.xml #generated:210
+# view res/layout/list_order.xml #generated:153
+# view res/layout/list_session_hyh_item.xml #generated:104
+# view res/layout/list_session_item.xml #generated:15
+# view res/layout/list_template.xml #generated:116
+# view res/layout/select_photo_item.xml #generated:8
+-keep class com.gezitech.widget.RemoteImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:755
+-keep class com.gezitech.widget.SelectPicPopupWindow { <init>(...); }
+
+# view res/layout/viewpage_contacts.xml #generated:6
+-keep class com.gezitech.widget.listgroup.PinnedHeaderListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.hyh.www.ForgetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.hyh.www.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.hyh.www.RegisteredActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.hyh.www.ServiceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.hyh.www.WechatDataActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.hyh.www.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.hyh.www.ZhuyeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.hyh.www.chat.AddTemplateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.hyh.www.chat.BillDetailActivity_bak { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class com.hyh.www.chat.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class com.hyh.www.chat.CreateBillActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.hyh.www.chat.CreatePayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:368
+-keep class com.hyh.www.chat.MapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class com.hyh.www.chat.MyMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.hyh.www.chat.OrderDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.hyh.www.chat.PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.hyh.www.chat.SelectTemplateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:309
+-keep class com.hyh.www.home.MyReleaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:413
+-keep class com.hyh.www.home.ReleaseHyhActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:355
+-keep class com.hyh.www.session.ChatMessagesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:336
+-keep class com.hyh.www.session.ContactsAddBuddyPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:323
+-keep class com.hyh.www.session.NewFriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:342
+-keep class com.hyh.www.session.NotesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.hyh.www.session.SearchChatContentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:330
+-keep class com.hyh.www.session.SearchFriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:381
+-keep class com.hyh.www.session.UsercomplainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:462
+-keep class com.hyh.www.user.AccountDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.hyh.www.user.AddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:426
+-keep class com.hyh.www.user.BecomeServiceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:420
+-keep class com.hyh.www.user.BecomeShangjiaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class com.hyh.www.user.ChangePassworldActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.hyh.www.user.ChooseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:348
+-keep class com.hyh.www.user.ContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:257
+-keep class com.hyh.www.user.EditDataActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.hyh.www.user.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:278
+-keep class com.hyh.www.user.IncomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:264
+-keep class com.hyh.www.user.IndividualAccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:439
+-keep class com.hyh.www.user.LookServiceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:433
+-keep class com.hyh.www.user.LookShangjiaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class com.hyh.www.user.MyPromotionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:316
+-keep class com.hyh.www.user.NewMessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:456
+-keep class com.hyh.www.user.OrderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:388
+-keep class com.hyh.www.user.PersonDetailedInformationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:228
+-keep class com.hyh.www.user.SystemMessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.hyh.www.user.SystemMessageDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:250
+-keep class com.hyh.www.user.SystemSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:286
+-keep class com.hyh.www.user.TopupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class com.hyh.www.user.WithdrawalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:468
+-keep class com.hyh.www.user.post.MyPostMsg { <init>(...); }
+
+# view AndroidManifest.xml #generated:489
+-keep class com.hyh.www.user.post.NearDetailActiviy { <init>(...); }
+
+# view AndroidManifest.xml #generated:484
+-keep class com.hyh.www.user.post.NewMsgHintActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:473
+-keep class com.hyh.www.user.post.PostMsg { <init>(...); }
+
+# view AndroidManifest.xml #generated:478
+-keep class com.hyh.www.user.post.PriceRangeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:659
+-keep class com.hyh.www.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:664
+-keep class com.hyh.www.wxapi.WXPayEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:857
+-keep class com.igexin.download.DownloadProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:852
+-keep class com.igexin.download.DownloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:848
+-keep class com.igexin.download.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:824
+-keep class com.igexin.getuiext.activity.GetuiExtActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:844
+-keep class com.igexin.getuiext.service.GetuiExtService { <init>(...); }
+
+# view AndroidManifest.xml #generated:833
+-keep class com.igexin.getuiext.service.PayloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:815
+-keep class com.igexin.sdk.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:807
+-keep class com.igexin.sdk.PushManagerReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:799
+-keep class com.igexin.sdk.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:792
+-keep class com.igexin.sdk.PushService { <init>(...); }
+
+# view res/layout/activity_image_dialog_item.xml #generated:12
+-keep class com.roger.quickviewpage.photoview.PhotoView { <init>(...); }
+
+# view res/layout/activity_image_dialog.xml #generated:5
+-keep class com.roger.quickviewpage.viewpage.HackyViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:671
+-keep class com.sina.weibo.sdk.component.WeiboSdkBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:503
+-keep class com.umeng.common.net.DownloadingService { <init>(...); }
+
+# view res/layout/umeng_xp_large_gallery.xml #generated:12
+-keep class com.umeng.newxp.view.UGallery { <init>(...); }
+
+# view res/layout/umeng_xp_handler_gallery.xml #generated:6
+-keep class com.umeng.newxp.view.widget.SwipeView { <init>(...); }
+
+# view res/layout/umeng_xp_handler_gallery.xml #generated:12
+-keep class com.umeng.newxp.view.widget.SwipeViewPointer { <init>(...); }
+
+# view AndroidManifest.xml #generated:508
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:739
+-keep class com.yintong.secure.activity.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:747
+-keep class com.yintong.secure.service.PayService { <init>(...); }
+
+# onClick res/layout/activity_chat.xml #generated:157
+-keepclassmembers class * { *** addressShare(...); }
+
+# onClick res/layout/activity_chat.xml #generated:133
+-keepclassmembers class * { *** billList(...); }
+
+# onClick res/layout/activity_chat.xml #generated:174
+-keepclassmembers class * { *** cardShare(...); }
+
+# onClick res/layout/activity_zhuye.xml #generated:19
+# onClick res/layout/activity_zhuye.xml #generated:34
+# onClick res/layout/activity_zhuye.xml #generated:48
+# onClick res/layout/activity_zhuye.xml #generated:62
+-keepclassmembers class * { *** click(...); }
+
+# onClick res/layout/activity_chat.xml #generated:145
+-keepclassmembers class * { *** payAction(...); }
+
+# onClick res/layout/activity_edit_data.xml #generated:39
+-keepclassmembers class * { *** uploadHead(...); }
+
+# onClick res/layout/activity_chat.xml #generated:121
+-keepclassmembers class * { *** uploadImage(...); }
+

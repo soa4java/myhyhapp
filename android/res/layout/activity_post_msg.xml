@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_post_distance"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_post_distance_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="发送半径"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_post_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="10KM"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_post_far"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="想发送更远？"
+                    android:textColor="@color/color3CA5F3"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/ed_post_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/view_select"
+                    android:hint="请输入发布内容"
+                    android:paddingLeft="6dp"
+                    android:text=""
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+ 			<com.gezitech.widget.FlowLayout android:id="@+id/ll_photo_select"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center_vertical|center_horizontal|left"
+	                >
+                
+            </com.gezitech.widget.FlowLayout>
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_common_btn_blue"
+                android:text="立即发布"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size18" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

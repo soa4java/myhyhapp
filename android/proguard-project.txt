@@ -1,0 +1,114 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-ignorewarnings 
+
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes Signature
+#广播 与 服务
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+-keepattributes *Annotation*
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+#-keepclasseswithmembernames class * {
+#    public <init>(android.content.Context, android.util.AttributeSet);
+#}
+#-keepclasseswithmembernames class * {
+#    public <init>(android.content.Context, android.util.AttributeSet, int);
+#}
+-keepclassmembers class * extends android.app.Activity {
+public void *(android.view.View); 
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep class **.R$* {*;}
+-keep class com.gezitech.basic.** {*;}
+-keep class com.gezitech.entity.** {*;}
+-keep class com.hyh.www.entity.** {*;}
+-keep class com.gezitech.service.xmpp.** {*;}
+
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.**  
+-keep class android.support.v4.** { *; }  
+-keep public class * extends android.support.v4.**  
+-keep public class * extends android.app.Fragment
+
+-libraryjars libs/apache-jakarta-commons-httpclient.jar
+-dontwarn org.apache.commons.httpclient.**  
+-keep class org.apache.commons.httpclient.** { *; } 
+-libraryjars libs/umeng_sdk.jar
+-dontwarn com.umeng.**  
+-keep class com.umeng.** { *; }
+
+
+-dontwarn cn.sharesdk.**  
+-keep class cn.sharesdk.** { *; }
+
+-keep class com.polites.** { *; }
+-keep class com.roger.** { *; }
+-libraryjars libs/slidingmenu.jar
+-dontwarn com.slidingmenu.**  
+-keep class com.slidingmenu.** { *; }
+
+-libraryjars libs/httpmime-4.1.3.jar
+-dontwarn org.apache.**
+-keep class  org.apache.** { *; }
+
+-libraryjars libs/pushservice-4.4.0.71.jar
+-libraryjars libs/BaiduLBS_Android.jar
+-libraryjars libs/android_api_1.1_forsdk.jar
+-libraryjars libs/galaxy_mini.jar
+-dontwarn com.baidu.**
+-keep class  com.baidu.** { *; }
+-keep class com.baidu.mapapi.** {*;}
+-keep class vi.com.gdi.bgl.android.**{*;} 
+
+-libraryjars libs/android-async-http-1.4.5.jar
+-dontwarn com.loopj.**
+-keep class com.loopj.** { *; }
+-libraryjars libs/asmack-jse-buddycloud-2010.12.11.jar
+-dontwarn org.jivesoftware.**
+-keep class org.jivesoftware.** { *; }
+-libraryjars libs/gson-2.2.4.jar 
+-dontwarn com.google.gson.**
+-keep class com.google.gson.** { *; }
+-libraryjars libs/securepay-lib.jar
+-dontwarn com.yintong.**
+-keep class com.yintong.** { *; }
+
+-keep class cn.sharesdk.**{*;}
+-keep class com.sina.**{*;}
+-dontwarn cn.sharesdk.**
+-keep class m.framework.**{*;}
+
+#缓存包
+-keep class com.squareup.**{*;}
+-dontwarn com.squareup.**
+
+#微信支付
+-keep class com.tencent.**{*;}
+-dontwarn com.tencent.**
+#个推
+-dontwarn com.igexin.**
+-keep class com.igexin.**{*;}
+
+
+
+

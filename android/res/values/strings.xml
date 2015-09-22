@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 应用名称 -->
+    <string name="app_name">喊一喊</string>
+
+    <!-- umeng统计appkey -->
+    <string name="umeng_appkey">546ef5c3fd98c57c8e00102c</string>
+
+    <!-- 使用分发渠道分析编码 -->
+    <string name="umeng_channel">baidu</string>
+
+    <!-- 百度api_key -->
+    <string name="api_key">TwGCC3Suwtok7v0nggchGLwb</string>
+    <string name="api_key_map">hGjaKDE8LMrGb82DsYEf9xnF</string>
+
+    <!-- 缓存sdk目录 -->
+    <string name="app_name_directory">hanyihan</string>
+    <string name="start_pic">启动页面展示</string>
+    <string name="auto_login_hint">自动登录</string>
+    <string name="type">普通</string>
+    <string name="beaccounts">已有账户? 马上登录</string>
+    <string name="phone">手机号码</string>
+    <string name="linkman">联系客服</string>
+    <string name="feedback">反馈意见</string>
+    <string name="about">关于我们</string>
+    <string name="account">账户信息</string>
+    <string name="updatepass">修改密码</string>
+    <string name="mail_find">邮箱找回密码</string>
+    <string name="company_skill">技术支持：重庆风旗网络科技有限公司</string>
+    <string name="check_version">检查新版本</string>
+    <string name="reset">重置</string>
+    <string name="submit">提交</string>
+    <string name="feedback_hint">请填写意见反馈内容!</string>
+    <string name="find_mail">邮箱找回密码</string>
+    <string name="reset_pass_mail">用注册时的邮箱找回密码</string>
+    <string name="find_pass">找回密码</string>
+    <string name="find_pass_fail">找回密码失败</string>
+    <string name="find_pass_success">找回密码成功</string>
+    <string name="send_msg">点击发送</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="network_error">网络错误,请检查网络</string>
+    <string name="load_error">加载失败,重新在试试</string>
+    <string name="login_fail">登录失败,请重试</string>
+    <string name="username_passwd_error_hint">用户名或密码不能为空</string>
+    <string name="login_success">登录成功</string>
+    <string name="loading_hint">正在加载中...</string>
+    <string name="loading_fail_hint">加载数据失败</string>
+    <string name="login_loading">登录中...</string>
+    <string name="register_loading">注册中...</string>
+    <string name="submit_loading">提交中...</string>
+    <string name="register_fail">注册失败</string>
+    <string name="submit_fail">提交失败</string>
+    <string name="submit_success">提交成功,我们会尽快处理</string>
+    <string name="send_loading">发送中...</string>
+    <string name="send_fail">发送失败</string>
+    <string name="send_success">发送成功</string>
+    <string name="save_userinfo">正在保存...</string>
+    <string name="save_userinfo_fail">保存用户资料失败</string>
+    <string name="save_userinfo_success">保存用户资料成功</string>
+    <string name="save_userinfoPass_fail">修改密码失败</string>
+    <string name="save_userinfoPass_success">修改密码成功</string>
+    <string name="save_loading">正在保存...</string>
+    <string name="save_fail">保存失败</string>
+    <string name="syn_fail">同步失败</string>
+    <string name="syn_loading">同步中...</string>
+    <string name="syn_success">同步成功</string>
+    <string name="net_rest">重试</string>
+	<string name="get_phone_code_fail">获取验证码失败</string>
+    <!-- listview -->
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="name_loading">加载中...</string>
+    <string name="hint_nodata_content">没有数据</string>
+    <string name="delete_loading">正在删除中</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="pulldown">该放手时就放手噢^_^</string>
+    <string name="refresh">伊儿伊,使劲拉^o^</string>
+    <string name="loading">*_*唔啊唔,努力的...加载中...</string>
+    <string name="no_data">啊唔,没有数据了^o^</string>
+    <string name="load">点击试试^o^</string>
+	<string name="data_error">啊唔,访问数据失败^o^</string>
+	<string name="upload_head_error">啊唔,上传头像失败^o^</string>
+	<string name="upload_head_success">上传头像成功</string>
+	<string name="tixian_succ">提现资料提交成功</string>
+	<string name="tixian_error">提现资料提交失败</string>
+	<!-- sharesdk -->
+    <string name="not_yet_authorized">尚未授权</string>
+    <string name="share_content">“喊一喊”app，既能完成订外卖、家政、快递、超市等大部分周边服务，还能帮你承接各类业务，注册时填写邀请码%s，可以获得代金券，快去各应用商店下载吧！</string>
+    <string name="share_content_short">找啥?订啥?喊一喊!</string>
+    <string name="evenote_title">找啥?订啥?喊一喊!</string>
+    <string name="share_url">http://www.hanyihan.net</string>
+    <string name="update">文字分享</string>
+    <string name="image_upload">图片分享（本地图片）</string>
+    <string name="image_upload_bitmap">图片分享（Bitmap对象）</string>
+    <string name="image_upload_url">图片分享（网络图片）</string>
+    <string name="emoji_upload">表情分享（本地图片）</string>
+    <string name="emoji_upload_url">表情分享（网络图片）</string>
+    <string name="emoji_upload_bm">表情分享（Bitmap对象）</string>
+    <string name="music_upload">音乐分享</string>
+    <string name="video_upload">视频分享</string>
+    <string name="webpage_upload">网页分享（本地图片）</string>
+    <string name="webpage_upload_bitmap">网页分享（Bitmap对象）</string>
+    <string name="webpage_upload_url">网页分享（网络图片）</string>
+    <string name="app_upload">应用分享（携带文件）</string>
+    <string name="app_upload_extinfo">应用分享（携带脚本）</string>
+    <string name="file_upload">文件分享</string>
+    <string name="share_to_wechat">微信好友</string>
+    <string name="share_to_moment">微信朋友圈</string>
+    <string name="share_to_favorite">微信收藏</string>
+    <string name="wechat_demo_title">微信分享Demo标题</string>
+    <string name="qzone_add_blog_sample"><h1>QQ互联</h1><font color="red">轻松分享,</font><font color="green">快乐生活。</font><a href="http://connect.qq.com">详情请看。</a><img src="http://imgcache.qq.com/ptlogin/head/1_100.gif"></img></string>
+    <string name="wechat_client_is_not_installed_correctly">微信客户端未安装或版本太旧</string>
+    <string name="wechat_client_not_support_following_operation">微信客户端不支持第三方应用执行关注功能</string>
+    <string name="share_to_yixin">易信好友</string>
+    <string name="share_to_yixin_moment">易信朋友圈</string>
+    <string name="share_to_yixin_favorite">易信收藏</string>
+    <string name="yixin_demo_title">易信分享Demo标题</string>
+    <string name="receive_rewards">恭喜你得到%s个金币！</string>
+    <string name="buy_success">购买成功</string>
+    <string name="buy_failed">购买失败</string>
+    <string name="laiwang">来往</string>
+    <string name="qzone_customer_share_style">自定义QQ空间分享风格</string>
+    <string name="title_activity_editbill">EditbillActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 充值 -->
+    <string name="chongzhi">充值</string>
+    <string name="chongzhijine">充值金额</string>
+    <string name="chongzhizhanghu">充值账户</string>
+    <string name="qurenzhifu">确认支付</string>
+
+    <!-- 提现 -->
+    <string name="tixian">提现</string>
+    <string name="tixianyihang">提现银行</string>
+    <string name="kaihuhang">开户行</string>
+    <string name="yinhangkahao">银行卡号</string>
+    <string name="zhanghuxingming">账户姓名</string>
+    <string name="tixianjine">提现金额</string>
+    <string name="querentixian">确认提现</string>
+
+    <!-- 个人账户 -->
+    <string name="shouru">推广收入</string>
+    <string name="zhichu">支出</string>
+    <string name="yue">余额</string>
+    <string name="huodongjuan">活动券</string>
+
+    <!-- 我的发布 -->
+    <string name="wodefabu">我的发布</string>
+    <string name="fabufanwei">发布范围:</string>
+    <string name="huifurenshu">回复人数:</string>
+    <string name="shengyushijian">剩余时间:</string>
+    <string name="shangjialeixing">商家类型:</string>
+    <string name="quxiaofabu">取消发布</string>
+
+    <!-- 我的推广 -->
+    <string name="wodeyaoqingma">我的邀请码:</string>
+    <string name="ruhetuiguang">如何推广?</string>
+    <string name="fangfa_one">（1）让他人注册喊一喊时填写你的邀请码。</string>
+    <string name="yonghu">（2）让他在各个主流应用商城下载“喊一喊”，注册时填写你的邀请码。</string>
+    <string name="fangfa_two">（3）在“会话”里打开“通讯录”，点击“添加朋友”。</string>
+    <string name="yaoqing">输入邀请码, 好友可获得%s元活动卷。</string>
+    <string name="congshangjiashouyi">从商家收益</string>
+    <string name="conggerenshouyi">从个人收益</string>
+    <string name="yuan">元</string>
+    <string name="chakanshangjia">查看商家</string>
+    <string name="chakangeren">查看个人</string>
+
+    <!-- 登录 -->
+    <string name="login">登录</string>
+    <string name="zhanghao">账号</string>
+    <string name="passworld">密码</string>
+    <string name="zp">账号/手机号码</string>
+    <string name="forgetpass">忘记密码?</string>
+    <string name="register">注册</string>
+
+    <!-- 主页 -->
+    <string name="homepage">首页</string>
+    <string name="session">会话</string>
+    <string name="nearby">附近人</string>
+    <string name="person">个人中心</string>
+
+    <!-- 个人加好友的详细资料 -->
+    <string name="xiangxiziliao">详细资料</string>
+    <string name="diqu">地区</string>
+    <string name="shezhibeizhu">设置备注</string>
+    <string name="biaoweixingbiaohaoyou">标为星标好友</string>
+    <string name="jiaruheimingdan">加入黑名单</string>
+    <string name="shanchu">删除</string>
+    <string name="faxiaoxi">发消息</string>
+    <string name="jiaweihaoyou">加为好友</string>
+    <string name="laiyuan">来源</string>
+
+    <!-- 商家加好友的详细资料 -->
+    <string name="qiyemingcheng">企业名称</string>
+    <string name="qiyeleixing">企业类型</string>
+
+    <!-- 新的朋友 -->
+    <string name="xindepengyou">新的朋友</string>
+    <string name="phone_account">手机号/喊一喊账号</string>
+    <string name="tianjiahaoyouqingqiu">添加好友请求</string>
+    <string name="jujue">拒绝</string>
+    <string name="tongyi">同意</string>
+    <string name="tianjiaweixinhaoyou">分享微信好友</string>
+    <string name="tianjiatongxunluhaoyou">分享通讯录好友</string>
+    <string name="tianjiaweibohaoyou">分享微博好友</string>
+
+    <!-- 联系我们 -->
+    <string name="hyh_banben">喊一喊</string>
+    <string name="company">浙江喊一喊网络科技有限公司</string>
+    <string name="lianxidianhua">联系电话</string>
+    <string name="chuanzhen">传真</string>
+    <string name="youxiang">邮箱</string>
+    <string name="banquan">版权所有</string>
+    <string name="bq"> All Rights Reserved.</string>
+    <string name="hyh_banquan">Copyright © 2014 hanyihan</string>
+
+    <!-- 个人中心 -->
+    <string name="nickname">我的昵称</string>
+    <string name="zh">账号:</string>
+    <string name="sales_bills">销售账单</string>
+    <string name="buy_bills">购买账单</string>
+    <string name="edit_data">编辑资料</string>
+    <string name="my_post_msg">我发布的信息</string>
+    <string name="person_account">个人账户</string>
+    <string name="my_promotion">我的推广</string>
+    <string name="system_settings">系统设置</string>
+
+    <!-- 添加模板 -->
+    <string name="querentianjia">确认添加</string>
+
+    <!-- 修改密码 -->
+    <string name="changepassworld">修改密码</string>
+    <string name="yuanmima">原密码</string>
+    <string name="xinmima">新密码</string>
+    <string name="querenxiugai">确认修改</string>
+    
+    
+
+    <!-- 意见反馈 -->
+    <string name="yijianfankui">意见反馈</string>
+    <string name="fankuineirong">请输入反馈内容</string>
+    <string name="tijiao">提交</string>
+    <string name="thanks_hyh">感谢使用“喊一喊”,请将您宝贵的意见或建议告诉我们,我们会在最短的时间内处理,谢谢您的支持</string>
+    <string name="tousu_hyh">感谢使用“喊一喊”,请输入投诉原因,我们会在最短的时间内处理,谢谢您的支持</string>
+    <string name="thanks_hyhtwo">们,我们会在最短的时间内处理,谢谢您的支持</string>
+    <string name="feekback_fail">提交意见反馈失败</string>
+    <string name="feekback_success">提交意见反馈成功</string>
+    <string name="send_address">喊一喊将获取您的地理位置发送给您的聊天好友</string>
+
+    <!-- 会话 -->
+    <string name="my_release">我的发布</string>
+    <string name="private_chat">私聊</string>
+    <string name="contacts">通讯录</string>
+    <string name="new_friend">新的朋友</string>
+
+    <!-- 选择模版 -->
+    <string name="tianjiamoban">添加模板</string>
+    <string name="bill_amount">账单金额:</string>
+    <string name="time_pay">限时支付:</string>
+    <string name="beizhuwenzishili">备注文字示例</string>
+    <string name="picture">图片</string>
+    <string name="ciweizhangdanbeizhuwenzi">此为账单备注文字</string>
+
+    <!-- 来自商家B的账单 -->
+    <string name="shangjiabB">来自商家B的账单</string>
+    <string name="remaining_time">剩余时间</string>
+    <string name="jujuezhifu">拒绝支付</string>
+    <string name="querenzhifu">确认支付</string>
+
+    <!-- 编辑资料 -->
+    <string name="bianjiziliao">编辑资料</string>
+    <string name="nicheng">昵称</string>
+    <string name="zhenshixingming">真实姓名</string>
+    <string name="shengfenzhenghaoma">身份证号码</string>
+    <string name="shouji">手机</string>
+    <string name="zuoji">座机</string>
+    <string name="genghuantouxiang">更换头像</string>
+    <string name="chengweishangjia">成为商家</string>
+
+    <!-- 新消息提醒 -->
+    <string name="jieshouxinxiaoxitongzhi">接受新消息通知</string>
+    <string name="shengyin">声音</string>
+    <string name="zhendong">振动</string>
+    <string name="shezhimiandaraoshiduan">设置免打扰时段</string>
+    <string name="kaishishijian">开始时间</string>
+    <string name="jieshushijian">结束时间</string>
+
+    <!-- 聊天信息 -->
+    <string name="liaotianxinxi">聊天信息</string>
+    <string name="zhidingliaotian">置顶聊天</string>
+    <string name="xinxiaoxitongzhi">新消息通知</string>
+    <string name="chazhaoliaotianjilu">查找聊天记录</string>
+    <string name="qingkongliaotianjilu">清空聊天记录</string>
+    <string name="guanbiliaotian">关闭聊天</string>
+    <string name="tousu">投诉</string>
+    <string name="dongjie">(冻结会话,商家不可再主动发消息)</string>
+
+    <!-- 系统设置 -->
+    <string name="xitongshezhi">系统设置</string>
+    <string name="xiugaimima">修改密码</string>
+    <string name="xinxiaoxitixing">新消息提醒</string>
+    <string name="banbengengxin">版本更新</string>
+    <string name="lianxiwomen">联系我们</string>
+    <string name="tuichudangqianzhanghao">退出当前账号</string>
+
+    <!-- 系统消息 -->
+    <string name="system_message">系统消息</string>
+    <string name="system_message_detail">系统消息详情</string>
+    <string name="lianxikefu">联系客服</string>
+    <string name="xinbanbengonggao">新版本公告更新公告</string>
+    <string name="hyh_gift">喊一喊公测开始啦!测试有好礼~</string>
+
+    <!-- 发布喊一喊 -->
+    <string name="fabuhanyihan">发布喊一喊</string>
+    <string name="tianjiawenzi">添加文字让需求更清晰(不要超过25个字)</string>
+    <string name="fabuchenggong">发布成功</string>
+    <string name="close">关闭</string>
+    <string name="fabu_xuqiu">你的需求已发布,所有回复信息将在 “会话”里显示,请注意查看。</string>
+    <string name="fabu_huihua"></string>
+    <string name="fabu_kan"></string>
+    <string name="songkai">松开手指, 立即发送</string>
+    <string name="youxiaoshijian">有效时间</string>
+    <string name="shangjia_type">商家类型</string>
+    <string name="reply_number">回复人数</string>
+    <string name="release_range">发布范围</string>
+
+    <!-- 成为商家 -->
+    <string name="jibenxinxi">基本信息</string>
+    <string name="danweimingcheng">单位名称</string>
+    <string name="danweidizhi">单位地址</string>
+    <string name="danweidianhua">单位电话</string>
+    <string name="weidianmingcheng">微店名称</string>
+    <string name="qiyerenzheng">企业认证</string>
+    <string name="yingyezhizhao">营业执照</string>
+    <string name="jingyingxukezheng">经营许可证</string>
+    <string name="changdizhaopian">场地照片</string>
+    <string name="lianxirenzhaopian">联系人照片</string>
+    <string name="tijiaorenzheng">提交认证</string>
+      
+    <!-- 注册 -->
+    <string name="hanyihan">喊一喊</string>
+    <string name="hanyihan_register">喊一喊注册</string>
+    <string name="yanzhengma">验证码</string>
+    <string name="phonenumber">手机号码</string>
+    <string name="dianjiyouce">点击右侧按钮获取</string>
+    <string name="fasongyanzhengma">发送验证码</string>
+    <string name="shurumima">输入密码</string>
+    <string name="zaicishuru">再次输入</string>
+    <string name="yaoqingma">邀请码</string>
+    <string name="xuantian">(选填) 输入邀请码可获得%s元活动券</string>
+    <string name="yiyouzhanghao">已有账号</string>
+
+    <!-- 编辑账单 -->
+    <string name="bianjizhangdan">编辑账单</string>
+    <string name="xuanzemoban">选择模版</string>
+    <string name="zhangdanbianhao">账单编号</string>
+    <string name="shangjiaxingming">商家姓名</string>
+    <string name="dizhi">地址</string>
+    <string name="lianxifangshi">联系方式</string>
+    <string name="maijiaxingming">买家姓名</string>
+    <string name="zhangdanbeizhu">点击添加账单备注</string>
+    <string name="zhangdanjine">账单金额</string>
+    <string name="xianshizhifu">限时支付</string>
+    <string name="qingxuanze">请选择</string>
+    <string name="fasongzhangdan">发送账单</string>
+
+    <!-- Activity -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registered">RegisteredActivity</string>
+    <string name="title_activity_zhuye">ZhuyeActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_change_passworld">ChangePassworldActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_system_message">SystemMessageActivity</string>
+    <string name="title_activity_topup">TopupActivity</string>
+    <string name="title_activity_withdrawal">WithdrawalActivity</string>
+    <string name="title_activity_system_setting">SystemSettingActivity</string>
+    <string name="title_activity_new_message">NewMessageActivity</string>
+    <string name="title_activity_chat_messages">ChatMessagesActivity</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+    <string name="title_activity_edit_data">EditDataActivity</string>
+    <string name="title_activity_individual_account">IndividualAccountActivity</string>
+    <string name="title_activity_my_promotion">MyPromotionActivity</string>
+    <string name="title_activity_my_release">MyReleaseActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_person_detailed_information">PersonDetailedInformationActivity</string>
+    <string name="title_activity_shangjia_detailed_information">ShangjiaDetailedInformationActivity</string>
+    <string name="title_activity_new__friend">NewFriendActivity</string>
+    <string name="title_activity_shangjiab_bill">ShangjiabBillActivity</string>
+    <string name="title_activity_release_hyh">ReleaseHyhActivity</string>
+    <string name="title_activity_become_shangjia">BecomeShangjiaActivity</string>
+    
+    <!-- im登录提示 -->
+ 	<string name="message_invalid_username_password">错误的用户名或密码</string>
+    <string name="message_server_unavailable">无法连接到服务器</string>
+    <string name="message_user_disabled">用户被禁用</string>
+    <string name="message_user_expired">账户已过期</string>
+    <string name="message_userip_no_access">IP不合法,已被禁用</string>
+    <string name="unrecoverable_error">发生未知异常,连接失败</string>
+    <!-- 聊天界面的提示 -->
+    <string name="chat_hint">提示：使用喊一喊付款，可提升商家级别，保障服务品质，因为只有当用户确认服务后，喊一喊才会在2-3个工作日将款项支付给商家或服务者。</string>
+	<!-- 默认优惠券 -->
+	<string name="default_coupons">2</string>
+	<!-- 默认客户回复 -->
+	<string name="kefu_replay">您好，我是喊一喊的客服“%s”，您有任何问题请随时联系我，我会第一时间为您解答^_^</string>
+    <string name="folder_all">All Images</string>
+    <string name="preview">Preview</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">Select images amount is limit</string>
+</resources>

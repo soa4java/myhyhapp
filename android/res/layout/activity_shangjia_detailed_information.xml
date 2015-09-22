@@ -1,0 +1,416 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".ShangjiaDetailedInformationActivity_bak" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/shangjiaDetailed_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/shangjiaDetailed_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/shangjiaDetailed_Relative"
+                android:layout_width="fill_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/shangjiaDetailed_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/testphoto_01" />
+
+                <TextView
+                    android:id="@+id/shangjiaDetailed_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@id/shangjiaDetailed_photo"
+                    android:text="昵称"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size18" />
+
+                <TextView
+                    android:id="@+id/shangjiaDetailed_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_toRightOf="@id/shangjiaDetailed_photo"
+                    android:text="@string/zh"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/shangjiaDetailed_accountnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_toRightOf="@id/shangjiaDetailed_account"
+                    android:text="ssss"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+                <!-- 如果是已加好友此图显示，如果是未加好友此图不显示 具体参照ppt41 -->
+
+                <ImageView
+                    android:id="@+id/shangjiaDetailed_xxzl_star"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/xxzl_star" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorececec" />
+
+            <LinearLayout
+                android:id="@+id/shangjiaDetailed_diqu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiaDetailed_diqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/diqu"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/text_shangjiaDetailed_diqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:text="重庆"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <LinearLayout
+                android:id="@+id/shangjiaDetailed_enterprisename"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiaDetailed_enterprisename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/qiyemingcheng"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/text_shangjiaDetailed_enterprisename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:text="ssss"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <LinearLayout
+                android:id="@+id/shangjiaDetailed_enterprisetype"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_shangjiaDetailed_enterprisetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/qiyeleixing"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/text_shangjiaDetailed_enterprisetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:text="ssss"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+            <!-- 已加好友具体参照ppt42 -->
+
+            <LinearLayout
+                android:id="@+id/shangjiaDetailed_havefriends"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/shangjiaDetailed_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/selector_personcolor"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailed_setting"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:src="@drawable/xxzl_remark" />
+
+                    <TextView
+                        android:id="@+id/tv_shangjiaDetailed_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="72dp"
+                        android:text="@string/shezhibeizhu"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size14" />
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailedarrow_setting"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/common_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/colorececec" />
+
+                <RelativeLayout
+                    android:id="@+id/shangjiaDetailed_xingbiao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailed_xingbiao"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:src="@drawable/xxzl_star" />
+
+                    <TextView
+                        android:id="@+id/tv_shangjiaDetailed_xingbiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="72dp"
+                        android:text="@string/biaoweixingbiaohaoyou"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size14" />
+
+                    <CheckBox
+                        android:id="@+id/iv_shangjiaDetailed_common_on"
+                        android:layout_width="72dp"
+                        android:layout_height="27dp"
+                        android:button="@null"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/btn_common_on" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/colorececec" />
+
+                <RelativeLayout
+                    android:id="@+id/shangjiaDetailed_blacklist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/selector_personcolor"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailed_blacklist"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:src="@drawable/xxzl_blacklist" />
+
+                    <TextView
+                        android:id="@+id/tv_shangjiaDetailed_blacklist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="72dp"
+                        android:text="@string/shezhibeizhu"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size14" />
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailedarrow_blacklist"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/common_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/colorececec" />
+
+                <RelativeLayout
+                    android:id="@+id/shangjiaDetailed_del"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/selector_personcolor"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailed_del"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:src="@drawable/xxzl_del" />
+
+                    <TextView
+                        android:id="@+id/tv_shangjiaDetailed_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="72dp"
+                        android:text="@string/shanchu"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size14" />
+
+                    <ImageView
+                        android:id="@+id/iv_shangjiaDetailedarrow_del"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/common_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/colorececec" />
+
+                <Button
+                    android:id="@+id/shangjiaDetailed_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_common_btn_blue"
+                    android:text="@string/faxiaoxi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </LinearLayout>
+            <!-- 已加好友 -->
+            
+            <!-- 未加好友具体参照ppt42 -->
+
+            <RelativeLayout
+                android:id="@+id/shangjiaDetailed_withoutfriend"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorf8f8f8"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/shangjiaDetailed_addfriend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/button_common_btn_blue"
+                    android:text="@string/jiaweihaoyou"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </RelativeLayout>
+            <!-- 未加好友 -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

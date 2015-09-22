@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorf8f8f8" >
+    <include layout="@layout/common_head"
+	    android:id="@+id/i_head"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/header_height" />
+    <include layout="@layout/list_chat_content_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_hint"
+        android:layout_below="@+id/i_head"
+        />
+	<com.gezitech.widget.MyListView android:id="@+id/list_view"
+	    android:layout_below="@+id/i_hint"
+	    android:layout_above="@+id/ll_chat_action_box"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@null"
+     	android:scrollingCache="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+		android:footerDividersEnabled="false"
+		android:headerDividersEnabled="false"
+		android:background="@color/colorf8f8f8"
+	    >
+	</com.gezitech.widget.MyListView>
+	<LinearLayout android:id="@+id/ll_chat_action_box"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/white"
+	    >
+	    <View android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/colorececec"/>
+	    <LinearLayout android:id="@+id/ll_post_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:layout_marginTop="11dp"
+	        android:layout_marginBottom="11dp">
+		    <ImageButton android:id="@+id/ib_switch_sort"
+		        android:layout_width="36dp"
+		        android:layout_height="36dp"
+		        android:layout_marginLeft="18dp"
+		        android:src="@drawable/dhck_sendvoice_select"
+		        android:background="@android:color/transparent"
+		        />
+		    <RelativeLayout android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1.0"
+		        android:layout_marginLeft="12dp"
+		        android:layout_marginRight="12dp">
+			    <EditText 
+				  android:id="@+id/et_post_msg"
+				  android:layout_width="fill_parent"
+				  android:layout_height="fill_parent"
+				  android:hint="说点什么?"
+				  android:layout_gravity="center_vertical"
+				  android:textSize="@dimen/size12"
+				  android:textColor="#323232"
+				  android:drawableRight="@drawable/baise"
+				  android:background="@drawable/view_select"
+				  />
+			    <ImageButton android:id="@+id/ib_post_smile"
+			        android:layout_width="36dp"
+			        android:layout_height="36dp"
+			        android:src="@drawable/dhck_smile_select"
+			        android:background="@android:color/transparent"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        />
+			    <Button android:id="@+id/bt_talk"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:text="按住 说话"
+			        android:textColor="@color/black"
+			        android:textSize="12sp"
+			        android:background="@drawable/common_btn_gray"
+			        android:button="@null"
+			        android:visibility="gone"
+			        />
+		    </RelativeLayout>
+		    <ImageButton android:id="@+id/ib_post_send"
+		        android:layout_width="36dp"
+		        android:layout_height="36dp"
+		        android:layout_marginRight="18dp"
+		        android:src="@drawable/dhck_send_select"
+		        android:background="@android:color/transparent"
+		        android:visibility="gone"
+		        />
+		    <ImageButton android:id="@+id/ib_post_select"
+		        android:layout_width="36dp"
+		        android:layout_height="36dp"
+		        android:layout_marginRight="18dp"
+		        android:src="@drawable/dhck_add_select"
+		        android:background="@android:color/transparent"
+		        />
+	    </LinearLayout>
+	    <!-- 底部操作的action盒子 附加功能-->
+	    <LinearLayout android:id="@+id/ll_bottom_action_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="202dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/chat_bottom_solid"
+	        android:visibility="gone"
+	       
+	        >
+	            <LinearLayout android:orientation="horizontal"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="22dp"
+	                android:layout_marginBottom="22dp">
+	                <Button android:id="@+id/bt_update_img" 
+	                    android:layout_weight="1.0"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@android:color/transparent"
+	                    android:drawableTop="@drawable/dhck_icon_pic_select"
+	                    android:text="图片"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size12"
+	                    android:drawablePadding="6dp"
+	                    android:onClick="uploadImage"
+	                    />
+	                <Button android:id="@+id/bt_bill" 
+	                    android:layout_weight="1.0"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@android:color/transparent"
+	                    android:drawableTop="@drawable/dhck_icon_bill_select"
+	                    android:text="订单中心"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size12"
+	                    android:drawablePadding="6dp"
+	                    android:onClick="billList"
+	                    />
+	                <Button android:id="@+id/ib_pay" 
+	                    android:layout_weight="1.0"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@android:color/transparent"
+	                    android:drawableTop="@drawable/dhck_icon_pay_select"
+	                    android:text="付款"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size12"
+	                    android:drawablePadding="6dp"
+	                    android:onClick="payAction"
+	                    />
+	                <Button android:id="@+id/ib_address" 
+	                    android:layout_weight="1.0"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@android:color/transparent"
+	                    android:drawableTop="@drawable/dhck_icon_address_select"
+	                    android:text="地址"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size12"
+	                    android:drawablePadding="6dp"
+	                    android:onClick="addressShare"
+	                    />
+	            </LinearLayout>
+	            <LinearLayout android:orientation="horizontal"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="left">
+	                <Button android:id="@+id/bt_card" 
+	                    android:layout_weight="0.75"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@android:color/transparent"
+	                    android:drawableTop="@drawable/dhck_icon_card_select"
+	                    android:text="名片"
+	                    android:textColor="@color/color323232"
+	                    android:textSize="@dimen/size12"
+	                    android:drawablePadding="6dp"
+	                    android:onClick="cardShare"
+	                    />
+	                <!-- 占位 -->
+	                <Button
+	                    android:layout_weight="0.25"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@android:color/transparent"
+	                    />
+	            </LinearLayout>
+	    </LinearLayout>
+	    <!-- 底部操作表情功能  -->
+	    <LinearLayout android:id="@+id/rl_emoji_action_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="202dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/chat_bottom_solid"
+	        android:visibility="gone"
+	        >
+	        <android.support.v4.view.ViewPager
+		          android:id="@+id/vp_emoji"
+		          android:layout_width="fill_parent"
+		          android:layout_height="fill_parent"
+		          android:layout_weight="1.0"
+		          android:layout_gravity="center"/>
+	        <LinearLayout android:id="@+id/ll_select_origin"
+	            android:layout_width="fill_parent"
+	            android:layout_height="20dp"
+	            android:orientation="horizontal"
+	            android:gravity="center_vertical|center_horizontal">
+	        </LinearLayout> 
+	    </LinearLayout>
+	</LinearLayout>
+	<include layout="@layout/releasehyh_yuyin_dialog"
+	    android:id="@+id/i_voice"
+	    android:layout_width="180dp"
+	    android:layout_height="180dp"
+	    android:layout_centerVertical="true"
+	    android:layout_centerHorizontal="true"
+	    android:visibility="gone" />
+	
+</RelativeLayout>

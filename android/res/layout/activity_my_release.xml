@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".MyReleaseActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+	<com.gezitech.widget.MyListView android:id="@+id/list_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:listSelector="@null"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:divider="@null"
+	        android:dividerHeight="0dp"
+			android:footerDividersEnabled="false"
+			android:headerDividersEnabled="false"></com.gezitech.widget.MyListView>
+</LinearLayout>

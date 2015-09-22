@@ -1,0 +1,431 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/editbill_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/editbill_TOP"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/editbill_number"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/zhangdanbianhao"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="2014897654"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/editbill_merchantsname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_merchantsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shangjiaxingming"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/tv_merchantsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="风旗网络"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editbill_merchantsaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_merchantsaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dizhi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/tv_merchantsaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="重庆市沙坪坝小龙坎正街49号"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/editbill_merchantscontact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_merchantscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lianxifangshi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_merchantscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="023-65341571"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/editbill_buyersname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_buyersname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/maijiaxingming"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_buyersname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="林小豆"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editbill_buyersaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_buyersaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dizhi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_buyersaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="重庆市沙坪坝区正升自由康都B座"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editbill_buyerscontact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:paddingLeft="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_buyerscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lianxifangshi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_buyerscontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="78dp"
+                    android:text="13812345678"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorf8f8f8" />
+
+            <TextView
+                android:id="@+id/ed_edit_beizhu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:hint="@string/zhangdanbeizhu"
+                android:paddingLeft="6dp"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/selector_textcolor"
+                android:textSize="@dimen/size14" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/editbill_jine"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/zhangdanjine"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/ed_editbill_jine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="90dp"
+                    android:text="3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_releaseHyh_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorececec" />
+
+                <com.gezitech.widget.RemoteImageView
+                    android:id="@+id/iv_releaseHyh_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_default_photo" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec"
+               />
+
+            <RelativeLayout
+                android:id="@+id/editbill_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="订单状态"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_editbill_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="订单状态"
+                    android:textColor="@color/colorff340c"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/rl_shengyu_time"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_shengyu_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="剩余时间"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_shengyu_time_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="1时4分23秒"
+                    android:textColor="@color/colorff340c"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_action_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorf8f8f8"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_jujue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="27dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_common_btn_red"
+                    android:text="拒绝支付"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+
+                <Button
+                    android:id="@+id/bt_zhifu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="27dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_common_btn_blue"
+                    android:text="确认支付"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

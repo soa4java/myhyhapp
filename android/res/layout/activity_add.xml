@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AddActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+
+    <EditText
+        android:id="@+id/ed_add_beizhu"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/view_select"
+        android:hint="@string/zhangdanbeizhu"
+        android:paddingLeft="6dp"
+        android:textColor="@color/selector_textcolor"
+        android:textSize="@dimen/size14" />
+
+    <RelativeLayout
+        android:id="@+id/add_jine"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/tv_add_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="@string/zhangdanjine"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size14" />
+
+        <EditText
+            android:id="@+id/ed_add_jine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/view_select"
+            android:paddingLeft="90dp"
+            android:hint="25"
+            android:textColor="@color/selector_textcolor"
+            android:textSize="@dimen/size14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_personcolor"
+        android:clickable="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" >
+
+        <TextView
+            android:id="@+id/tv_add_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/xianshizhifu"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size14" />
+
+        <TextView
+            android:id="@+id/tv_add_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="72dp"
+            android:text="@string/qingxuanze"
+            android:textColor="@color/color949494"
+            android:textSize="@dimen/size14" />
+
+        <ImageView
+            android:id="@+id/iv_add_pay"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_send"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorf8f8f8"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/iv_add_camera"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_bjzd_camera" />
+
+        <Button
+            android:id="@+id/bt_add_querentianjia"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/button_common_btn_blue"
+            android:text="@string/querentianjia"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size18" />
+    </LinearLayout>
+
+</LinearLayout>

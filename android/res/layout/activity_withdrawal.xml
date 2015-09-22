@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".WithdrawalActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+
+    <ScrollView
+        android:id="@+id/Withdrawal_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/Withdrawal_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorf8f8f8"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/withdrawal_bank"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_withdrawal_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/tixianyihang"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_withdrawal_bankchoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp"
+                    android:text="@string/qingxuanze"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_withdrawal_bank"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/withdrawal_bank"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_withdrawal_kaihuhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/kaihuhang"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+				<EditText
+                    android:id="@+id/ed_kaihuhang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:paddingLeft="90dp"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/bank_number"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_bank_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/yinhangkahao"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_bank_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:paddingLeft="90dp"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhanghu_name"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_zhanghu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/zhanghuxingming"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_zhanghu_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:paddingLeft="90dp"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tixian_jine"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_tixian_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/tixianjine"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_tixian_jine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:paddingLeft="90dp"
+                    android:hint="0.00"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/Withdrawal_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <Button
+                    android:id="@+id/Withdrawal_querentixian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_common_btn_blue"
+                    android:text="@string/querentixian"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

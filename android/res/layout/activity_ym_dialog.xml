@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/ym_shake"
+     >
+     <LinearLayout android:layout_width="264dp"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <TextView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:text="提示"
+             android:textColor="@color/color2c90f6"
+             android:textSize="16sp"
+             android:gravity="center_horizontal"
+             android:textStyle="bold"/>
+         <TextView  android:id="@+id/tv_hint_msg"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:text="提示文字"
+             android:textColor="@color/color323232"
+             android:textSize="14sp"
+             android:gravity="center_horizontal"
+             android:layout_marginBottom="10dp"
+             android:paddingRight="18dp"
+             android:paddingLeft="18dp"/>
+         <View android:layout_height="1dp"
+             android:layout_width="fill_parent"
+             android:background="#c6c6ca"
+             android:layout_marginTop="10dp"/>
+         <LinearLayout android:id="@+id/ll_box2" 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             >
+             <TextView  android:id="@+id/tv_confim"
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:paddingTop="15dp"
+	             android:text="确定"
+	             android:textColor="#007AFF"
+	             android:textSize="14sp"
+	             android:gravity="center_horizontal"
+	             android:paddingBottom="15dp"
+	             android:layout_weight="1.0"/>
+             <View android:layout_height="fill_parent"
+	             android:layout_width="1dp"
+	             android:background="#c6c6ca"/>
+             
+             <TextView  android:id="@+id/tv_cancel2"
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:paddingTop="15dp"
+	             android:text="取消"
+	             android:textColor="#007AFF"
+	             android:textSize="14sp"
+	             android:gravity="center_horizontal"
+	             android:paddingBottom="15dp"
+	             android:layout_weight="1.0"/>
+         </LinearLayout>
+     </LinearLayout>
+</LinearLayout>

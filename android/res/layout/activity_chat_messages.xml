@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".MapActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/chatmessages_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/changepassworld_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/top_chat"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_top_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/zhidingliaotian"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/Check_top_chat"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:button="@null"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/btn_common_on" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/new_alerts"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_new_alerts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/xinxiaoxitongzhi"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/Check_new_alerts"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:button="@null"
+                    android:background="@drawable/btn_common_on" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@color/colorf8f8f8" />
+
+            <RelativeLayout
+                android:id="@+id/chatmessages_chazhao"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_chatmessages_chazhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/chazhaoliaotianjilu"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_chatmessages_chazhao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/chatmessages_qingkong"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_chatmessages_qingkong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/qingkongliaotianjilu"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_chatmessages_qingkong"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/chatmessages_close"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_chatmessages_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/guanbiliaotian"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+                     <TextView
+                    android:id="@+id/tv_chatmessages_dongjie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/dongjie"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size12" />
+
+                <ImageView
+                    android:id="@+id/iv_chatmessages_close"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+
+            <RelativeLayout
+                android:id="@+id/chatmessages_tousu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_chatmessages_tousu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tousu"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_chatmessages_tousu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/colorececec" />
+            <RelativeLayout
+                android:id="@+id/personDetailed_withoutfriend"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorf8f8f8"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/personDetailed_addfriend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/button_common_btn_red"
+                    android:text="@string/jiaweihaoyou"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_list_nearby"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <!-- 头像 -->
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/comment_default_pic" />
+
+        <LinearLayout
+            android:id="@+id/ll_right_box"
+            android:layout_width="fill_parent"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 用户名和性别 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:textColor="@color/color3ca5f3"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:lineSpacingExtra="2dp"
+                android:text="用户名用户名用户名用户名用户名用户名用用户名用户"
+                android:textColor="@color/color323232"
+                android:textSize="@dimen/size12"
+                 />
+            <ImageView android:src="@drawable/icon_like_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_like"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <TextView android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="消息原内容"
+            android:textColor="#D7D7D7"
+            android:textSize="@dimen/size12"
+            android:background="@color/colorececec"
+            android:padding="2dp"
+            android:gravity="center_vertical|center_horizontal|left"
+            android:id="@+id/tv_near_content"
+            android:visibility="gone"
+            />
+        <ImageView android:id="@+id/iv_near_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/pic_loading_all"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorececec" />
+
+</LinearLayout>

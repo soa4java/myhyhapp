@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<!-- 加载头部  -->
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+    <FrameLayout android:layout_height="fill_parent"
+        android:layout_below="@+id/i_head"
+        android:layout_width="fill_parent">
+    <GridView
+        android:id="@+id/grid_view"  
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fadingEdge="none"
+	    android:scrollbars="none"
+	    android:numColumns="3"
+	    android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@null"
+     	android:scrollingCache="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth" 
+        android:paddingTop="5dp"
+        android:paddingBottom="45dp"
+	    >
+    </GridView>
+    <LinearLayout android:layout_width="fill_parent"
+        android:background="@color/black"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <TextView android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|left"
+            android:paddingLeft="20dp"
+            android:text="可以添加3张截图"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+        <Button android:id="@+id/bt_complete"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ssp_queding_btn"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:text="完成"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

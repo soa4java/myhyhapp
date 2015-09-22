@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/ll_img_box">
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:background="@drawable/common_default_photo"
+        android:id="@+id/iv_img"/>
+
+       <!-- 自定义圆形经度条 -->
+	    <com.gezitech.widget.LoadingCircleView
+	         android:id="@+id/loading_cirle_view"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:layout_centerHorizontal="true"
+	         android:layout_centerVertical="true"
+	         android:layout_margin="10dp"
+	         android:visibility="gone"
+	         >
+	     </com.gezitech.widget.LoadingCircleView
+	         >
+	         <ImageView 
+		       android:layout_width="20dp"
+		       android:layout_height="20dp"
+		       android:src="@drawable/play_del_xx"
+		       android:layout_alignParentRight="true"
+		       android:layout_alignParentTop="true"
+		       android:layout_margin="5dp"
+		       android:id="@+id/iv_del"
+		       android:visibility="gone"
+		       />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/ym_shake" >
+    <RelativeLayout
+        android:id="@+id/releasehyh_linear"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/tv_fabuchenggong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="12dp"
+            android:text="@string/fabuchenggong"
+            android:textColor="@color/color2c90f6"
+            android:textSize="@dimen/size16" />
+
+        <View
+            android:id="@+id/fabu_line"
+            android:layout_width="214dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="48dp"
+            android:background="@color/colorececec" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fabu_line"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white"
+            android:text="@string/fabu_xuqiu"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size12" />
+
+      
+        <View
+            android:id="@+id/fabu_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_content"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorececec" />
+
+        <Button
+            android:id="@+id/Login_login"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/fabu_view"
+            android:background="@drawable/selector_personcolor"
+            android:text="@string/close"
+            android:textColor="@color/color323232"
+            android:textSize="@dimen/size14" />
+    </RelativeLayout>
+
+</RelativeLayout>

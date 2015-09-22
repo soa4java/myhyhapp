@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".TopupActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/colorf8f8f8" />
+
+    <ScrollView
+        android:id="@+id/topup_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/topup_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorf8f8f8"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/topup_account"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_topup_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/chongzhizhanghu"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_topup_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:hint=""
+                    android:paddingLeft="90dp"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topup_money"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_topup_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/chongzhijine"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_topup_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:hint="0.00"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="90dp"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="18dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="选择支付方式"
+                    android:textColor="@color/color2c90f6"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_pay_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rb_online_pay"
+                        android:layout_width="175dp"
+                        android:layout_height="42dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_button_background"
+                        android:drawablePadding="6dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:drawableRight="@drawable/pay_ll"
+                        android:textColor="@color/color323232"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorececec"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_wx_pay"
+                        android:layout_width="175dp"
+                        android:layout_height="42dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_button_background"
+                        android:drawablePadding="6dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                         android:drawableRight="@drawable/pay_wx"
+                        android:textColor="@color/color323232"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorececec"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topup_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <Button
+                    android:id="@+id/topup_tijiao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/button_common_btn_blue"
+                    android:text="@string/tijiao"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

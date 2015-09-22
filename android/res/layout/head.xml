@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorf8f8f8">
+	<!-- 内容 -->
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/head_contentLayout"
+		android:paddingLeft="50dp"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
+		>
+		<!-- 箭头图像、进度条 -->
+		<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			>  
+			<!-- 箭头 -->
+			<ImageView
+				android:layout_width="wrap_content"
+			 	android:layout_height="wrap_content"
+			  	android:layout_gravity="center"
+			  	android:src="@drawable/icon_refresh_down"
+			  	android:id="@+id/head_arrowImageView"
+			  	
+			  	/> 
+			<ProgressBar  
+		        android:id="@+id/head_progressBar"  
+		        android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@anim/progress_round"
+                android:visibility="gone"   />  
+		</FrameLayout>  
+		<!-- 提示、最近更新 -->
+		<LinearLayout
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:layout_centerHorizontal="true"
+		  	android:orientation="vertical"
+		  	android:gravity="center_horizontal"
+		  	> 
+			<!-- 提示 -->
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			 	android:text="@string/refresh"
+			  	android:textSize="12sp"
+			  	android:id="@+id/head_tipsTextView"
+			  	android:textColor="@color/color4d4d4d"
+			  	android:layout_marginTop="8dp"
+			  	/>
+			<!-- 最近更新 -->
+			<TextView
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+			 	android:id="@+id/head_lastUpdatedTextView"
+			 	android:text="更新于:07/20 13:12"
+			  	android:textSize="12sp"
+			  	android:textColor="@color/color999999"
+			  	android:layout_marginTop="5dp"
+			  /> 
+		</LinearLayout>  
+  	</RelativeLayout>  
+</LinearLayout>

@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf8f8f8"
+    android:orientation="vertical"
+    tools:context=".MyPromotionActivity" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/mypromotion_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/mypromotion_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp" >
+
+            <LinearLayout
+                android:id="@+id/mypromotion_MENU"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/color80db0a"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_mypromotion_testcode"
+                    android:layout_width="129dp"
+                    android:layout_height="129dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/wdtg_testcode" />
+
+                <LinearLayout
+                    android:id="@+id/mypromotion_yaoqingma"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/iv_mypromotion_testcode"
+                    android:layout_marginTop="21dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_mypromotion_yaoqingma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="55dp"
+                        android:text="@string/wodeyaoqingma"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size18" />
+
+                    <TextView
+                        android:id="@+id/tv_mypromotion_yaoqingmanumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:text=""
+                        android:textColor="@color/colorff340c"
+                        android:textSize="@dimen/size18"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/color73c30b" />
+
+                <LinearLayout
+                    android:id="@+id/mypromotion_tuiguang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp" >
+					<TextView
+                        android:id="@+id/tv_ruhetuiguang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提示：推广喊一喊可以终身获得被推广人销售或订购商品1%的分成。"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size14"
+                        android:lineSpacingExtra="2dp"
+                        android:layout_marginBottom="2dp" />
+                    <TextView
+                        android:id="@+id/tv_ruhetuiguang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ruhetuiguang"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size14" />
+                    <TextView
+                        android:id="@+id/tv_tuiguangfangfa_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/fangfa_one"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size12"
+                        android:lineSpacingExtra="2dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tuiguangfangfa_yonghu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/yonghu"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size12"
+                        android:lineSpacingExtra="2dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tuiguangfangfa_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/fangfa_two"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size12"
+                        android:lineSpacingExtra="2dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mypromotion_shouyi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/mypromotion_shangjiashouyi"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/mypromotion_congshangjiashouyi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_mypromotion_congshangjiashouyi"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/wdtg_business" />
+
+                        <TextView
+                            android:id="@+id/tv_mypromotion_congshangjiashouyi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7dp"
+                            android:text="@string/congshangjiashouyi"
+                            android:textColor="@color/color949494"
+                            android:textSize="@dimen/size14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorececec" />
+
+                    <LinearLayout
+                        android:id="@+id/mypromotion_shangjiamoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_mypromotion_shangjiamoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="12.96"
+                            android:textColor="@color/color2c90f6"
+                            android:textSize="@dimen/size22"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_mypromotion_shangjiayuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/yuan"
+                            android:textColor="@color/color949494"
+                            android:textSize="@dimen/size12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_mypromotion_congshangjiashouyi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/common_btn_gray"
+                        android:text="@string/chakanshangjia"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mypromotion_gerenshouyi"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/mypromotion_conggerenshouyi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_mypromotion_conggerenshouyi"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/wdtg_personal" />
+
+                        <TextView
+                            android:id="@+id/tv_mypromotion_conggerenshouyi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7dp"
+                            android:text="@string/conggerenshouyi"
+                            android:textColor="@color/color949494"
+                            android:textSize="@dimen/size14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorececec" />
+
+                    <LinearLayout
+                        android:id="@+id/mypromotion_gerenmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_mypromotion_gerenmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0.55"
+                            android:textColor="@color/color2c90f6"
+                            android:textSize="@dimen/size22"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_mypromotion_gerenyuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/yuan"
+                            android:textColor="@color/color949494"
+                            android:textSize="@dimen/size12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_mypromotion_conggerenshouyi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/common_btn_gray"
+                        android:text="@string/chakangeren"
+                        android:textColor="@color/color323232"
+                        android:textSize="@dimen/size12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

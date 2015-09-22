@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/i_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/editbill_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/editbill_TOP"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/ed_edit_beizhu"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/view_select"
+                android:hint="@string/zhangdanbeizhu"
+                android:paddingLeft="6dp"
+                android:textColor="@color/selector_textcolor"
+                android:textSize="@dimen/size14" />
+
+            <RelativeLayout
+                android:id="@+id/editbill_jine"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/zhangdanjine"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <EditText
+                    android:id="@+id/ed_editbill_jine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/view_select"
+                    android:paddingLeft="90dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0.00"
+                    android:textColor="@color/selector_textcolor"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editbill_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_personcolor"
+                android:clickable="true"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_editbill_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/xianshizhifu"
+                    android:textColor="@color/color323232"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/tv_editbill_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="72dp"
+                    android:text="@string/qingxuanze"
+                    android:textColor="@color/color949494"
+                    android:textSize="@dimen/size14" />
+
+                <ImageView
+                    android:id="@+id/iv_editbill_pay"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editbill_send"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorf8f8f8" >
+
+                <ImageButton
+                    android:id="@+id/iv_camera"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_bjzd_camera" />
+                <RelativeLayout
+                     android:id="@+id/rl_releaseHyh_photo"
+                     android:layout_width="60dp"
+                     android:layout_height="60dp"
+                     android:layout_marginLeft="12dp"
+                     android:layout_toRightOf="@+id/iv_camera"
+                     android:visibility="gone"
+                      android:layout_marginTop="12dp" >
+
+                     <com.gezitech.widget.RemoteImageView
+                         android:id="@+id/iv_releaseHyh_photo"
+                         android:layout_width="60dp"
+                         android:layout_height="60dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_centerVertical="true" />
+
+                     <ImageView
+                         android:id="@+id/iv_del"
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"
+                         android:layout_alignParentRight="true"
+                         android:layout_alignParentTop="true"
+                         android:src="@drawable/play_del_xx" />
+                 </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_editbill_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/iv_camera"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/button_common_btn_blue"
+                    android:text="确认添加"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
